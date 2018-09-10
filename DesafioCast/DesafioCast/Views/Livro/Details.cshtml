@@ -1,0 +1,32 @@
+﻿@model DesafioCast.Models.Livro
+@{
+    ViewBag.Title = "Detalhar";
+}
+
+<h2>Detalhar</h2>
+
+<table class="table">
+    <thead>
+    <th>Campo</th>
+    <th>Valor</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.LabelFor(x => x.Id)</td>
+            <td>@Html.DisplayTextFor(x => x.Id)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.Titulo)</td>
+            <td>@Html.DisplayTextFor(x => x.Titulo)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.Ano)</td>
+            <td>@Html.DisplayTextFor(x => x.Ano)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(x => x.Status)</td>
+            <td>@Html.DisplayTextFor(x => x.Status)</td>
+        </tr>        
+    </tbody>
+</table>
+@Html.ActionLink("Editar", "Edit");
